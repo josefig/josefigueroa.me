@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{% block title %}{{ SITENAME }}{%endblock%}</title>
+  <meta charset="utf-8" />
+
+  <link rel="stylesheet" href="https://f.fontdeck.com/s/css/YbEbVONS3yZB1DYf9YVHgZSgeMA/kylefuller.co.uk/14510.css" type="text/css" />
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/master.css" type="text/css" />
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pygment.css" type="text/css" />
+
+  <link href="{{ SITEURL }}/{{ FEED }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} ATOM Feed" />
+
+  {% if FEED_RSS %}
+    <link href="{{ SITEURL }}/{{ FEED_RSS }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
+  {% endif %}
+</head>
+
+<body id="{% block body_id %}{% endblock %}">
+  <section>
+    {% block content %}
+    {% endblock %}
+  </section>
+
+  <aside id="sidebar">
+		<h1>Jose Figueroa: Lucha libre, tacos y linux!</h1>
+		<h3>Viva la rèsistance!</h3>
+		<p>
+			I'm <span>Jose Figueroa</span> and I'm a software engineer living in Mexico. <br/>
+			I work on my own startup named <a href="http://springlabs.net">Spring Labs</a> that
+			is a software development firm placed in Mexico City.
+		</p>
+	
+		<p>
+			Some of my experiences are:
+			<ul>
+				<li>Software development with: C, Ruby, PHP and Java</li>
+				<li>Front-end development with: JavaScript and CSS</li>
+				<li>Good experience with high-traffic applications</li>
+				<li>Big scaling data and well-designed apps</li>
+				<li>Mobile applications</li>
+			</ul>
+		</p>
+		<p>You can reach me on twitter at <a href="http://twitter.com/el_figueroac">@el_figueroac</a> and on github at <a href="https://github.com/josefig">github.com/josefig</a> thanks!
+		</p>
+    <h4>Some useful links:</h4>
+    <ul>
+      {% for link in LINKS %}
+        <li><a href="{{ link.url }}">{{ link.name }}</a> — {{ link.name }}</li>
+      {% endfor %}
+    </ul>
+
+    <h4>Recent Articles</h4>
+    <ul>
+      {% for article in (dates|reverse|list)[0:6] %}
+        {% if not article.project %}
+          <li>
+            <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"title="Permalink to {{ article.title}}">{{ article.title }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </aside>
+
+{% include 'github.html' %}
+{% include 'analytics.html' %}
+
+</body>
+</html>
