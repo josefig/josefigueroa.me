@@ -1,2 +1,2 @@
 #! /usr/bin/bash
-pelican -d -s settings.py posts/ -o content/
+pelican -t theme -s settings.py  -o content/
