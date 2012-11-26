@@ -2,7 +2,7 @@
 :title: Social culture at office
 :tags: office, culture, entrepreneur
 
-Social culture at office
+Our second home
 ------------------------
 
 Our office has became in more than a simple office because it's proved that we spend 
@@ -18,6 +18,9 @@ a great group which understood what I am talking about. This small group are in 
 working together, with no stress working only 4 or 5 days at week and the company revenue is 
 really enviable !
 
+What we love
+--------------
+
 On the other hand, Facebook installations are more oriented on the human resources (or better said 
 the real people) which make the companies' magic possible. We as engineers love technology, the new 
 brand gadget, the newest macbook air or even the best internet connection. If you really want a change 
@@ -31,6 +34,9 @@ In addition, allowing the regular meetings on fridays "just because you can" pre
 topic which can be interesting for the area, facilities for international certifications and stop 
 doing the formal clothes and you will have a great high-tech organization. Let them participate in 
 the geek community by writing articles, participating on symposiums or international events.
+
+Conclusion
+----------
 
 Keep in practice this and I assure you that you will have a great group committed with their work and 
 looking after the quality of their efforts. That is a real company and not the ones which only push 
